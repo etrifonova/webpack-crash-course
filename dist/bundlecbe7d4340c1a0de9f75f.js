@@ -4725,9 +4725,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var smileImg = document.getElementById('smileImg');
 smileImg.src = _assets_smiley_svg__WEBPACK_IMPORTED_MODULE_2__;
-console.log((0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])());
+var jokeBtn = document.getElementById('btn');
+jokeBtn.addEventListener('click', _generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"]);
+(0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle7b235501abdd9075b179.js.map
+//# sourceMappingURL=bundlecbe7d4340c1a0de9f75f.js.map
