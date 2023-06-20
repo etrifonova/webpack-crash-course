@@ -1,6 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const productionConfig = merge([
+//     {
+//         output: {
+//             publicPath: "/webpack-crash-course/",
+//         },
+//     },
+// ])
 
 module.exports = {
     mode: 'development',
@@ -11,7 +18,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name][contenthash].js',
         clean: true,
-        assetModuleFilename: '[name][ext]'
+        assetModuleFilename: '[name][ext]',
+        publicPath: "/webpack-crash-course/"
     },
     devtool: 'source-map',
     devServer: {
